@@ -12,3 +12,8 @@
 
 (defn mult [n] (fn [m] (fn [f] (fn [x] ((n (m f)) x)))))
 
+;Forma alternativa definiendo previamente zero y succ
+
+(def _one (succ zero))
+(def _two (succ _one))
+(def _three (succ _two))
